@@ -128,9 +128,7 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list .item:not(:last-child) {
   margin-right: 40px;
@@ -179,8 +177,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -240,9 +237,7 @@ p {
   border: none;
   margin-left: auto;
   margin-right: auto;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -358,8 +353,7 @@ p {
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover {
   background-color: #404bbf;
@@ -437,14 +431,11 @@ p {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon {
   fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -491,8 +482,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover {
   background-color: #31d0aa;
@@ -676,7 +666,7 @@ p {
 }
 .modal {
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -721,10 +711,10 @@ p {
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-icon:hover {
+.modal-close-btn .modal-close-icon:hover {
   fill: #ffffff;
 }
-.modal-close-icon:focus {
+.modal-close-btn .modal-close-icon:focus {
   fill: #ffffff;
 }
 
