@@ -744,10 +744,21 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px 164px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-card .link:hover .overlay {
+.portfolio-card .link:hover .overlay-text {
   transform: translateY(0);
 }
-.portfolio-card .link:focus .overlay {
+.portfolio-card .link:focus .overlay-text {
   transform: translateY(0);
 }
